@@ -419,6 +419,7 @@ export default function Dashboard() {
               actionLink={insight.actionLink}
               icon={insight.icon}
               color={insight.color}
+              type={insight.title.includes("Retention") ? "retention-risk" : undefined}
             />
           ))}
         </div>

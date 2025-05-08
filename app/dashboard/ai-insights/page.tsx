@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Download, FileText, RefreshCw } from "lucide-react"
 import { toast } from "@/components/ui/use-toast"
 import { Toaster } from "@/components/ui/toaster"
+import { useSearchParams } from "next/navigation"
 import { InsightsSummary } from "@/components/ai-insights/insights-summary"
 import { RevenueOpportunityCard } from "@/components/ai-insights/revenue-opportunity-card"
 import { RetentionRiskCard } from "@/components/ai-insights/retention-risk-card"
@@ -14,14 +15,23 @@ import { PeakHourCard } from "@/components/ai-insights/peak-hour-card"
 import { RenewalOfferCard } from "@/components/ai-insights/renewal-offer-card"
 
 export default function AIInsightsPage() {
+  const searchParams = useSearchParams()
   const [insights, setInsights] = useState<any>(null)
   const [loading, setLoading] = useState(true)
   const [refreshing, setRefreshing] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [activeTab, setActiveTab] = useState("revenue")
 
   useEffect(() => {
     fetchInsights()
-  }, [])
+
+    // Check if there's a tab parameter in the URL
+    const tabParam = searchParams.get("tab")
+    if (tabParam) {
+      // Set the active tab based on the URL parameter
+      setActiveTab(tabParam)
+    }
+  }, [searchParams])
 
   const fetchInsights = async () => {
     try {
@@ -117,7 +127,7 @@ export default function AIInsightsPage() {
       {insights && <InsightsSummary summary={insights.summary} />}
 
       {/* Tabs for different insights */}
-      <Tabs defaultValue="revenue" className="w-full">
+      <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
         <TabsList className="bg-zinc-900 border border-zinc-800">
           <TabsTrigger value="revenue">Revenue Opportunities</TabsTrigger>
           <TabsTrigger value="retention">Retention Risks</TabsTrigger>
@@ -213,4 +223,3 @@ export default function AIInsightsPage() {
     </div>
   )
 }
-

@@ -1,7 +1,9 @@
+"use client"
+
 import { Users, Activity, DollarSign } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 interface InsightCardProps {
   title: string
@@ -10,9 +12,12 @@ interface InsightCardProps {
   actionLink: string
   icon: string
   color: string
+  type?: string
 }
 
-export function InsightCard({ title, description, action, actionLink, icon, color }: InsightCardProps) {
+export function InsightCard({ title, description, action, actionLink, icon, color, type }: InsightCardProps) {
+  const router = useRouter()
+
   const getIcon = () => {
     switch (icon) {
       case "users":
@@ -52,6 +57,14 @@ export function InsightCard({ title, description, action, actionLink, icon, colo
     }
   }
 
+  const handleClick = () => {
+    if (type === "retention-risk") {
+      router.push("/dashboard/ai-insights?tab=retention")
+    } else {
+      router.push(actionLink)
+    }
+  }
+
   return (
     <Card className="bg-zinc-900 border-zinc-800">
       <CardHeader className="pb-2">
@@ -62,13 +75,10 @@ export function InsightCard({ title, description, action, actionLink, icon, colo
       </CardHeader>
       <CardContent>
         <p className="text-gray-400 mb-4">{description}</p>
-        <Link href={actionLink}>
-          <Button variant="outline" className="w-full border-zinc-700 hover:bg-zinc-800">
-            {action}
-          </Button>
-        </Link>
+        <Button variant="outline" className="w-full border-zinc-700 hover:bg-zinc-800" onClick={handleClick}>
+          {action}
+        </Button>
       </CardContent>
     </Card>
   )
 }
-

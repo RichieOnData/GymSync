@@ -36,79 +36,92 @@ export function Footer() {
 
             {/* Features */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold">Features</h3>
+              <h3 className="mb-4 text-sm font-semibold">Blogs</h3>
               <ul className="space-y-2 text-sm text-gray-400">
+              <li>
+                <Link 
+                href="https://medium.com/beingwell/a-walking-workout-that-will-transform-your-body-no-seriously-2427e5ffb689" 
+                className="hover:text-white"
+                target="_blank"  
+                rel="noopener noreferrer"
+                >
+                  Workout Recommendations
+                </Link>
+              </li>
                 <li>
-                  <Link href="#" className="hover:text-white">
-                    Workout Recommendations
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white">
+                  <Link 
+  
+                href="https://medium.com/change-your-mind/a-nutrition-plan-that-aims-to-support-you-throughout-your-life-19f533192fee" 
+                className="hover:text-white"
+                target="_blank"  
+                rel="noopener noreferrer"
+                >
                     Nutrition Planning
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white">
-                    Performance Tracking
+                  <Link 
+                href="https://medium.com/change-your-mind/12-high-performance-habits-that-will-make-you-unstoppable-in-work-and-life-e02dc7c88591" 
+                className="hover:text-white"
+                target="_blank"  
+                rel="noopener noreferrer"
+                  >
+                 
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white">
-                    Admin Analytics
+                    
                   </Link>
                 </li>
               </ul>
             </div>
 
             {/* Company */}
-            <div>
-              <h3 className="mb-4 text-sm font-semibold">Company</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <Link href="#" className="hover:text-white">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white">
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white">
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          
 
             {/* Connect */}
             <div>
               <h3 className="mb-4 text-sm font-semibold">Connect</h3>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-white">
-                    Contact Us
+                  <Link 
+                  href="https://medium.com/change-your-mind/a-nutrition-plan-that-aims-to-support-you-throughout-your-life-19f533192fee" 
+                  className="hover:text-white"
+                  target="_blank"  
+                  rel="noopener noreferrer"
+                  >
+                  
+                    
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white">
+                  <Link 
+                  href="https://twitter.com/" 
+                  className="hover:text-white"
+                  target="_blank"  
+                  rel="noopener noreferrer"
+                  >
                     Twitter
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white">
-                    Facebook
+                  <Link 
+                  href="https://twitter.com/" 
+                  className="hover:text-white"
+                  target="_blank"  
+                  rel="noopener noreferrer"
+                  >
+                    
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white">
+                  <Link 
+                  href="https://www.instagram.com/" 
+                  className="hover:text-white"
+                  target="_blank"  
+                  rel="noopener noreferrer"
+                  >
                     Instagram
                   </Link>
                 </li>

@@ -86,7 +86,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       icon: MessageSquare,
     },
     {
-      name: "Staff Management",
+      name: "Staff Management(🔒Upgrade Plan🔒)",
       href: "/dashboard/staff",
       icon: Users,
     },
