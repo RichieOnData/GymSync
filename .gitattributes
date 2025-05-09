@@ -1,0 +1,6 @@
+*.py linguist-language=Python
+*.sql linguist-language=SQL
+*.json linguist-language=JSON
+*.js linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=React
