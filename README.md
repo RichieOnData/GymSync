@@ -5,26 +5,20 @@ GymSync is an intelligent, AI-driven admin dashboard built to revolutionize the 
 
 With GymSync, gym admins can automate tasks, gain insights through AI analytics, and seamlessly manage members, staff, and performance metrics—all in one place.
 
-Key Technologies
+## Key Technologies
+
 React: Fast and responsive frontend framework that provides a smooth, interactive user experience for gym administrators.
-
 Node.js: Robust backend environment that ensures scalability and real-time data processing.
-
 Supabase: Powerful open-source database and authentication solution, offering secure and efficient management of gym data.
-
 AI Integration: Advanced AI algorithms to provide insights into gym operations, member activity, and resource management.
 
-Features
+## Features
+
 AI-Driven Insights: Real-time analytics to help admins track gym performance, optimize member retention, and predict trends.
-
 Member Management: Easily manage member profiles, track attendance, and monitor usage patterns.
-
 Staff Management: Track staff schedules, performance, and manage their assignments seamlessly.
-
 Real-Time Dashboard: A visually appealing, real-time dashboard that shows gym occupancy, equipment usage, and more.
-
 Automated Alerts: Receive automated notifications for important events, such as low equipment availability or staff schedule conflicts.
-
 Data Security: Secure authentication and user management, powered by Supabase.
 
 Why GymSync?
