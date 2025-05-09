@@ -1,4 +1,5 @@
-GymSync - AI-Powered Admin Dashboard for Gym Management
+## GymSync - AI-Powered Admin Dashboard for Gym Management
+
 Introduction
 GymSync is an intelligent, AI-driven admin dashboard built to revolutionize the way gym owners and administrators manage their facilities. Designed with cutting-edge technologies like React, Node.js, and Supabase, GymSync offers an intuitive and powerful platform to monitor gym operations, track key metrics, and make data-driven decisions.
 
